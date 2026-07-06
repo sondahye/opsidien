@@ -1,0 +1,3 @@
+npm install
+npm run vault -- /path/to/your/vault   # preprocess: graph.json + note texts
+npm run dev
