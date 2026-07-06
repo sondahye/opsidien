@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault Galaxy</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <canvas id="gl"></canvas>
+
+  <div id="labels"></div>
+
+  <div id="crosshair" data-ui><span class="dot"></span></div>
+
+  <aside id="hud" data-ui></aside>
+
+  <aside id="note-panel" data-ui hidden></aside>
+
+  <div id="status" data-ui></div>
+
+  <div id="help" data-ui hidden>
+    <div class="card">
+      <h2>Controls</h2>
+      <table>
+        <tr><td>Click canvas</td><td>capture mouse (Esc releases)</td></tr>
+        <tr><td>Mouse</td><td>turn heading · tilt view</td></tr>
+        <tr><td>W / S</td><td>thrust forward / back (level)</td></tr>
+        <tr><td>A / D</td><td>strafe</td></tr>
+        <tr><td>E / Q</td><td>rise / descend</td></tr>
+        <tr><td>Space (hold)</td><td>hyperdrive</td></tr>
+        <tr><td>Crosshair click / fly close</td><td>open note</td></tr>
+        <tr><td>V</td><td>dive into note · return</td></tr>
+        <tr><td>Esc ×2</td><td>return from dive</td></tr>
+        <tr><td>Z</td><td>zen mode</td></tr>
+        <tr><td>T</td><td>cycle theme</td></tr>
+        <tr><td>H</td><td>this help</td></tr>
+      </table>
+      <button id="help-close">close</button>
+    </div>
+  </div>
+
+  <div id="hint" data-ui>click to fly · <b>H</b> help</div>
+
+  <div id="loading"><span>reading the vault…</span></div>
+  <div id="fade"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
